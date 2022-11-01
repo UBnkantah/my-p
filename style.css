@@ -191,6 +191,14 @@ input[type=checkbox] {
     font-family: var(--fontFamily);
     margin-bottom: 10px;
 }
+.info button{
+    padding: 10px;
+    border-radius: 10px;
+}
+.info button a{
+    color: black;
+    font-weight: bold;
+}
 @media only screen and (max-width: 768px){
     #about-me .info p{
         font-size: 13px;
