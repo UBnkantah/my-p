@@ -366,7 +366,7 @@ input[type=checkbox] {
 	height: 100%;
 	left: 0;
 	top: 0;
-	background: url("./PICS/what2-removebg-preview\ \(1\).png") no-repeat center;
+	background: url("./images/what2-removebg-preview\ \(1\).png") no-repeat center;
 	background-size: cover;
 	filter: blur(50px);
 	z-index: -1;
@@ -383,7 +383,8 @@ input[type=checkbox] {
 }
 
 .left{
-	background: url("./PICS/what2-removebg-preview\ \(1\).png") no-repeat center;
+	background-image: url("./images/what2-removebg-preview\ \(1\).png"); 
+    background-repeat: no-repeat;
 	background-size: cover;
 	height: 100%;
 }
