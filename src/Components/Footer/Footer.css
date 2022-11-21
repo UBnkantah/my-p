@@ -1,0 +1,40 @@
+.footer{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 20px;
+    background-color: black;
+    border-top-left-radius: 40px;
+    border-top-right-radius: 40px;
+}
+.footer .sub-footer{
+    flex: 1;
+}
+.footer h3{
+    color: white;
+    font-weight: 900;
+}
+.footer p{
+    color: white;
+    font-weight: 600;
+}
+.info{
+    display: flex;
+    gap: 0.5em;
+}
+.info div{
+    background-color: white;
+    border-radius: 20px;
+    cursor: pointer;
+}
+.info div img{
+    width: 30px;
+    height: 30px;
+}
+
+@media screen and (max-width: 767px) {
+    .footer{
+        display: flex;
+        flex-direction: column;
+        gap: 1em;
+    }
+}

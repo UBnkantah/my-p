@@ -1,0 +1,29 @@
+.header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0px 30px;
+    flex-wrap: wrap-reverse;
+    gap: 1em;
+}
+.header .head-details p{
+    text-align: center;
+    font-size: 18px;
+    font-weight: 600;
+}
+.header .div{
+    width: 380px;
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    flex-direction: column;
+}
+.header .div button{
+    padding: 10px 15px;
+    border-radius: 15px;
+    cursor: pointer;
+}
+.header .head-img img{
+    width: 100%;
+}
+    
