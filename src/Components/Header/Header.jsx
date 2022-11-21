@@ -1,4 +1,5 @@
 import React from 'react'
+import { motion, Variants } from "framer-motion"
 import HeadImg from "../Images/mosop.png"
 import "./Header.css"
 

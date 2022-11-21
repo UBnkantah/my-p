@@ -7,7 +7,7 @@ import jQuery from "../Images/jqueryc.png"
 import wordPress from "../Images/WPress.png"
 import Redux from "../Images/ReduxC.png"
 import ReactC from "../Images/ReactC.png"
-import RestAPI from "../Images/RestApic.png"
+import RestAPI from "../Images/RestApi.png"
 import TailCSS from "../Images/tailcss.webp"
 import "./Skills.css"
 
@@ -16,7 +16,6 @@ function Skills() {
     <div className='skills-container'>
         <h1>SKILLS</h1>
         <div className="skills">
-            <div className="pre-skills">
                 <div className='img-container'>
                     <img src={CssImg} alt="Css" />
                 </div>
@@ -47,8 +46,6 @@ function Skills() {
                 <div className='img-container'>
                     <img src={jQuery} alt="" />
                 </div>
-            </div>
-            
             
         </div>
     </div>
