@@ -8,10 +8,10 @@ const imgAnimate={
 	onscreen:{
 		x:0,
 		opacity: 1,
-		rotate:[0,10,0],
+		rotate:[0,5,0],
 		transition: {type: "string",
-		bounce: 0.5,
-		duration: 0.5
+		bounce: 0.3,
+		duration: 0.1
 		}
   
 	}
