@@ -7,9 +7,7 @@ const Contact = () => {
     <div id='contact' className='contact-me'>
         <h2>CONTACT ME</h2>
         <div className="contact-box">
-			<div className="left"
-			variants={imgAnimate}
-			>
+			<div className="left">
                 <img src={ContactImg} alt="" />
             </div>
 			<form
