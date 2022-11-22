@@ -5,14 +5,36 @@
     gap: 2em;
     padding: 20px;
 }
-.project div{
+.project .sub_project{
     width: 320px;
     height: 320px;
+    border-radius: 20px;
     box-shadow: 2px 2px 2px 2px black;
+}
+.sub_project .project-img{
+    width: 100%;
+    height: 280px;
 }
 .project div img{
     width: 100%;
     height: 100%;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+.sub_project .view{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.sub_project .view button{
+    border: 2px solid black;
+    border-radius: 15px;
+    padding: 5px 10px;
+    background-color: white;
+}
+.sub_project .view button a{
+    color: black;
 }
 .project-container h1{
     text-align: center;

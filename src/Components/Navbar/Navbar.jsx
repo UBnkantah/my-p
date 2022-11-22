@@ -15,11 +15,11 @@ const Navbar = () => {
     <div className="navbar">
         <h1>Personal</h1>
         <ul ref={NavRef}>
-          <li>HOME</li>
-          <li>ABOUT US</li>
-          <li>SKILLS</li>
-          <li>PROJECTS</li>
-          <li>CONTACT US</li>
+          <li><a href="/">HOME</a></li>
+          <li><a href="#about">ABOUT US</a></li>
+          <li><a href="#skills">SKILLS</a></li>
+          <li><a href="#projects">PROJECTS</a></li>
+          <li><a href="#contact">CONTACT US</a></li>
           <button className="nav-btn nav-close" onClick={showNavbar}>
             <FaTimes />
           </button>

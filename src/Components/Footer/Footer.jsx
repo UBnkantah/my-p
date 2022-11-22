@@ -9,7 +9,7 @@ import "./Footer.css"
 
 function Footer() {
   return (
-    <div className='footer'>
+    <div id='footer' className='footer'>
         <div className='sub-footer'>
             <h3>UBnkantah's Portfolio</h3>
             <p>Thank you for visiting my Personal Portfolio. </p>
@@ -29,11 +29,11 @@ function Footer() {
             <p>+233559338522</p>
             <p>ubongnkantahuwem@gmail.com</p>
             <div className='info'>
-                <div><img src={GithubLogo} alt="" /></div>
-                <div><img src={Linken} alt="" /></div>
-                <div><img src={Twiter} alt="" /></div>
-                <div><img src={Medium} alt="" /></div>
-                <div><img src={Telegram} alt="" /></div>
+                <div> <a href="https://github.com/UBnkantah"><img src={GithubLogo} alt="" /></a></div>
+                <div> <a href="https://www.linkedin.com/in/ubong-nkantah-015749215/"><img src={Linken} alt="" /></a></div>
+                <div> <a href=""><img src={Twiter} alt="https://twitter.com/neljason00?t=lhB4CtfSIu8otMGJ7YbkYA&s=09" /></a></div>
+                <div> <a href=""><img src={Medium} alt="https://medium.com/@ubongnkantahuwem" /></a></div>
+                <div> <a href=""><img src={Telegram} alt="https://t.me/UBnkantah" /></a></div>
             </div>
         </div>
     </div>

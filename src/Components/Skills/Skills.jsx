@@ -1,7 +1,7 @@
 import React from 'react'
 import CssImg from "../Images/CssImg.png"
 import BootImg from "../Images/BootImg.png"
-import Github from "../Images/GithubAPI.png"
+import JsLogo from "../Images/JS_Logo.png"
 import HTML from "../Images/HTMLC.png"
 import jQuery from "../Images/jqueryc.png"
 import wordPress from "../Images/WPress.png"
@@ -13,7 +13,7 @@ import "./Skills.css"
 
 function Skills() {
   return (
-    <div className='skills-container'>
+    <div id='skills' className='skills-container'>
         <h1>SKILLS</h1>
         <div className="skills">
                 <div className='img-container'>
@@ -35,7 +35,7 @@ function Skills() {
                     <img src={Redux} alt="" />
                 </div>
                 <div className='img-container'>
-                    <img src={Github} alt="" />
+                    <img src={JsLogo} alt="" />
                 </div>
                 <div className='img-container'>
                     <img src={wordPress} alt="" />

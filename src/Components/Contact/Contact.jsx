@@ -4,7 +4,7 @@ import ContactImg from "../Images/manOnTable.svg"
 
 function Contact() {
   return (
-    <div className='contact-me'>
+    <div id='contact' className='contact-me'>
         <h2>CONTACT ME</h2>
         <div className="contact-box">
 			<div className="left">
