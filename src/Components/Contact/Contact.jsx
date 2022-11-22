@@ -11,7 +11,7 @@ const imgAnimate={
 		rotate:[0,10,0],
 		transition: {type: "string",
 		bounce: 0.5,
-		duration: 0.8
+		duration: 0.5
 		}
   
 	}
