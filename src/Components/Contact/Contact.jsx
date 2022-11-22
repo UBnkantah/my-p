@@ -32,15 +32,14 @@ const Contact = () => {
 			>
                 <img src={ContactImg} alt="" />
             </motion.div>
-			<motion.form
-			variants={imgAnimate}
+			<form
 			action = "mailto:ubongnkantahuwem@gmail.com" method = "post" enctype = "text/plain" class="right left">
 				<input type="text" class="field" placeholder="Your Name" required />
 				<input type="text" class="field" placeholder="Your Email" required />
 				<input type="text" class="field" placeholder="Phone" required />
 				<textarea placeholder="Message" class="field" required></textarea>
 				<button type="submit" class="btn">Send</button>
-			</motion.form>
+			</form>
 		</motion.div>
         
     </div>
