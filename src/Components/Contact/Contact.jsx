@@ -11,24 +11,13 @@ const imgAnimate={
 		rotate:[0,10,0],
 		transition: {type: "string",
 		bounce: 0.5,
-		duration: 1
+		duration: 0.8
 		}
   
 	}
   }
-  
-  const contAnimate={
-	offscreen:{y:100, opacity:0},
-	onscreen:{y:0,
-	opacity: 1,
-	transition: {type: "string",
-	  bounce: 0.4,
-	  duration: 1
-	}
-	}
-  }
 
-function Contact() {
+const Contact = () => {
   return (
     <div id='contact' className='contact-me'>
         <h2>CONTACT ME</h2>
@@ -44,7 +33,7 @@ function Contact() {
                 <img src={ContactImg} alt="" />
             </motion.div>
 			<motion.form
-			variants={contAnimate}
+			variants={imgAnimate}
 			action = "mailto:ubongnkantahuwem@gmail.com" method = "post" enctype = "text/plain" class="right left">
 				<input type="text" class="field" placeholder="Your Name" required />
 				<input type="text" class="field" placeholder="Your Email" required />
