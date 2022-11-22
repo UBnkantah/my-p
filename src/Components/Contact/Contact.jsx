@@ -1,37 +1,17 @@
 import React from 'react'
 import "./Contact.css"
 import ContactImg from "../Images/manOnTable.svg"
-import {motion, Variants} from "framer-motion"
-
-const imgAnimate={
-	offscreen:{x:-100, opacity:0},
-	onscreen:{
-		x:0,
-		opacity: 1,
-		rotate:[0,5,0],
-		transition: {type: "string",
-		bounce: 0.3,
-		duration: 0.1
-		}
-  
-	}
-  }
 
 const Contact = () => {
   return (
     <div id='contact' className='contact-me'>
         <h2>CONTACT ME</h2>
-        <motion.div className="contact-box"
-		initial={"offscreen"}
-		whileInView={"onscreen"}
-		viewport={{once:false, amount:1}}
-		transition={{staggerChildren:0.5}}
-		>
-			<motion.div className="left"
+        <div className="contact-box">
+			<div className="left"
 			variants={imgAnimate}
 			>
                 <img src={ContactImg} alt="" />
-            </motion.div>
+            </div>
 			<form
 			action = "mailto:ubongnkantahuwem@gmail.com" method = "post" enctype = "text/plain" class="right left">
 				<input type="text" class="field" placeholder="Your Name" required />
@@ -40,7 +20,7 @@ const Contact = () => {
 				<textarea placeholder="Message" class="field" required></textarea>
 				<button type="submit" class="btn">Send</button>
 			</form>
-		</motion.div>
+		</div>
         
     </div>
   )
