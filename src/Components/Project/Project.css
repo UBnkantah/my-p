@@ -10,6 +10,7 @@
     height: 320px;
     border-radius: 20px;
     box-shadow: 2px 2px 2px 2px black;
+    cursor: pointer;
 }
 .sub_project .project-img{
     width: 100%;
@@ -32,6 +33,7 @@
     border-radius: 15px;
     padding: 5px 10px;
     background-color: white;
+    cursor: pointer;
 }
 .sub_project .view button a{
     color: black;

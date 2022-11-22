@@ -9,43 +9,101 @@ import Redux from "../Images/ReduxC.png"
 import ReactC from "../Images/ReactC.png"
 import RestAPI from "../Images/RestApi.png"
 import TailCSS from "../Images/tailcss.webp"
+import {motion, Variant} from "framer-motion"
 import "./Skills.css"
 
-function Skills() {
+const imageAnimate={
+    onScreen: {
+        scale: [1, 1, 1.2, 1.2, 1],
+        rotate: [0, 0, 180, 180, 0],
+        borderRadius: ["0%", "0%", "50%", "50%", "0%"],
+        transition: {
+            duration: 2,
+            ease: "easeInOut",
+            times: [0, 0.2, 0.5, 0.8, 1],
+            repeat: Infinity,
+            repeatDelay: 1
+        },
+    }
+    
+}
+
+
+const Skills = () => {
   return (
     <div id='skills' className='skills-container'>
         <h1>SKILLS</h1>
         <div className="skills">
-                <div className='img-container'>
+                <motion.div 
+                className='img-container'
+                animate={"onScreen"}
+                variants={imageAnimate}
+                >
                     <img src={CssImg} alt="Css" />
-                </div>
-                <div className='img-container'>
+                </motion.div>
+                <motion.div 
+                className='img-container'
+                animate={"onScreen"}
+                variants={imageAnimate}
+                >
                     <img src={HTML} alt="" />
-                </div>
-                <div className='img-container'>
+                </motion.div>
+                <motion.div 
+                className='img-container'
+                animate={"onScreen"}
+                variants={imageAnimate}
+                >
                     <img src={TailCSS} alt="" />
-                </div>
-                <div className='img-container'>
+                </motion.div>
+                <motion.div 
+                className='img-container'
+                animate={"onScreen"}
+                variants={imageAnimate}
+                >
                     <img src={ReactC} alt="" />
-                </div>
-                <div className='img-container'>
+                </motion.div>
+                <motion.div 
+                className='img-container'
+                animate={"onScreen"}
+                variants={imageAnimate}
+                >
                     <img src={RestAPI} alt="" />
-                </div>
-                <div className='img-container'>
+                </motion.div>
+                <motion.div 
+                className='img-container'
+                animate={"onScreen"}
+                variants={imageAnimate}
+                >
                     <img src={Redux} alt="" />
-                </div>
-                <div className='img-container'>
+                </motion.div>
+                <motion.div 
+                className='img-container'
+                animate={"onScreen"}
+                variants={imageAnimate}
+                >
                     <img src={JsLogo} alt="" />
-                </div>
-                <div className='img-container'>
+                </motion.div>
+                <motion.div 
+                className='img-container'
+                animate={"onScreen"}
+                variants={imageAnimate}
+                >
                     <img src={wordPress} alt="" />
-                </div>
-                <div className='img-container'>
+                </motion.div>
+                <motion.div 
+                className='img-container'
+                animate={"onScreen"}
+                variants={imageAnimate}
+                >
                     <img src={BootImg} alt="" />
-                </div>
-                <div className='img-container'>
+                </motion.div>
+                <motion.div 
+                className='img-container'
+                animate={"onScreen"}
+                variants={imageAnimate}
+                >
                     <img src={jQuery} alt="" />
-                </div>
+                </motion.div>
             
         </div>
     </div>

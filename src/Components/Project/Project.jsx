@@ -1,16 +1,40 @@
 import React from 'react'
 import GitSearch from "../Images/GithubAPI.png"
 import QuizApp from "../Images/QuizApp.png"
-import Timer from "../Images/SetTime.png"
+// import Timer from "../Images/SetTime.png"
 import HunglePg from "../Images/Huddle Landing-Pg.png"
+import {motion, Variants} from "framer-motion"
 import "./Project.css"
+
+const imgAnimate={
+    offscreen:{x:-100, opacity:0},
+    onscreen:{
+        x:0,
+        opacity: 1,
+        rotate:[0,10,0],
+        transition: {type: "string",
+        bounce: 0.5,
+        duration: 1
+        }
+
+    }
+}
 
 function Project() {
   return (
     <div id='project' className="project-container">
         <h1>PROJECTS</h1>
-        <div className='project'>
-            <div className='sub_project'>
+        <motion.div 
+        className='project'
+        initial={"offscreen"}
+        whileInView={"onscreen"}
+        viewport={{once:false, amount:0.5}}
+        transition={{staggerChildren:0.5}}
+        >
+            
+            <motion.div className='sub_project'
+            variants={imgAnimate}
+            whileHover={{scale: 1.1}}>
                 <div className="project-img">
                     <img src={QuizApp} alt="" />
                 </div>
@@ -21,8 +45,8 @@ function Project() {
                         <a href="https://relaxed-dusk-b53dcc.netlify.app/" target="_blank">VIEW</a>
                     </button>
                 </div>
-            </div>
-            <div className='sub_project'>
+            </motion.div>
+            {/* <motion.div className='sub_project' whileHover={{scale: 1.1}}>
                 <div className="project-img">
                     <img src={Timer} alt="" />
                 </div>
@@ -33,8 +57,11 @@ function Project() {
                         <a href="https://quiet-licorice-b541f7.netlify.app/" target="_blank">VIEW</a>
                     </button>
                 </div>
-            </div>
-            <div className='sub_project'>
+            </motion.div> */}
+            <motion.div 
+            variants={imgAnimate}
+            className='sub_project' 
+            whileHover={{scale: 1.1}}>
                 <div className="project-img">
                     <img src={HunglePg} alt="" />
                 </div>
@@ -45,8 +72,11 @@ function Project() {
                         <a href="https://polite-bonbon-4e14a1.netlify.app/" target="_blank">VIEW</a>
                     </button>
                 </div>
-            </div>
-            <div className='sub_project'>
+            </motion.div>
+            <motion.div 
+            className='sub_project' 
+            variants={imgAnimate}
+            whileHover={{scale: 1.1}}>
                 <div className="project-img">
                     <img src={GitSearch} alt="" />
                 </div>
@@ -57,8 +87,8 @@ function Project() {
                         <a href="https://github-search-jsx.vercel.app/" target="_blank">VIEW</a>
                     </button>
                 </div>
-            </div>
-        </div>
+            </motion.div>
+        </motion.div>
     </div>
   )
 }
