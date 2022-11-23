@@ -18,11 +18,11 @@ function Footer() {
         </div>
         <div className='sub-footer'>
             <h3>QUICK LINK</h3>
-            <p>HOME</p>
-            <p>ABOUT ME</p>
-            <p>SKILLS</p>
-            <p>PROJECTS</p>
-            <p>CONTACT ME</p>
+           <a href="/"><p>HOME</p></a> 
+           <a href="#about"><p>ABOUT ME</p></a> 
+           <a href="#skills"><p>SKILLS</p></a> 
+           <a href="#projects"><p>PROJECTS</p></a> 
+           <a href="#contact"><p>CONTACT ME</p></a> 
         </div>
         <div className='sub-footer'>
             <h3>CONTACT INFO</h3>
@@ -31,9 +31,9 @@ function Footer() {
             <div className='info'>
                 <div> <a href="https://github.com/UBnkantah"><img src={GithubLogo} alt="" /></a></div>
                 <div> <a href="https://www.linkedin.com/in/ubong-nkantah-015749215/"><img src={Linken} alt="" /></a></div>
-                <div> <a href=""><img src={Twiter} alt="https://twitter.com/neljason00?t=lhB4CtfSIu8otMGJ7YbkYA&s=09" /></a></div>
-                <div> <a href=""><img src={Medium} alt="https://medium.com/@ubongnkantahuwem" /></a></div>
-                <div> <a href=""><img src={Telegram} alt="https://t.me/UBnkantah" /></a></div>
+                <div> <a href="https://twitter.com/neljason00?t=lhB4CtfSIu8otMGJ7YbkYA&s=09"><img src={Twiter} alt="https://twitter.com/neljason00?t=lhB4CtfSIu8otMGJ7YbkYA&s=09" /></a></div>
+                <div> <a href="https://medium.com/@ubongnkantahuwem"><img src={Medium} alt="https://medium.com/@ubongnkantahuwem" /></a></div>
+                <div> <a href="https://t.me/UBnkantah"><img src={Telegram} alt="https://t.me/UBnkantah" /></a></div>
             </div>
         </div>
     </div>
