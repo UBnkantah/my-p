@@ -2,8 +2,8 @@ import React from 'react'
 import GitSearch from "../Images/GithubAPI.png"
 import QuizApp from "../Images/QuizApp.png"
 // import Timer from "../Images/SetTime.png"
-import HunglePg from "../Images/Huddle Landing-Pg.png"
-import {motion, Variants} from "framer-motion"
+import manaPg from "../Images/mana.png"
+import {motion, Variants} from "framer-motion";
 import "./Project.css"
 
 const imgAnimate={
@@ -63,13 +63,13 @@ function Project() {
             className='sub_project' 
             whileHover={{scale: 1.1}}>
                 <div className="project-img">
-                    <img src={HunglePg} alt="" />
+                    <img src={manaPg} alt="" />
                 </div>
                 <hr />
                 <div className="view">
-                    <h3>HUNDLE LANDING PAGE</h3>
+                    <h3>MANAGE LANDING PAGE</h3>
                     <button>
-                        <a href="https://polite-bonbon-4e14a1.netlify.app/" target="_blank">VIEW</a>
+                        <a href="https://manage-react-pg.vercel.app/" target="_blank">VIEW</a>
                     </button>
                 </div>
             </motion.div>
