@@ -3,7 +3,7 @@ import GitSearch from "../Images/GithubAPI.png"
 import QuizApp from "../Images/QuizApp.png"
 import gymImg from "../Images/hero-img-mob.png"
 import fytoImg from "../Images/blog-third-img.png"
-import Timer from "../Images/setTime.png"
+import Timer from "../Images/SetTime.png"
 import manaPg from "../Images/mana.png"
 import {motion, Variants} from "framer-motion";
 import "./Project.css"
