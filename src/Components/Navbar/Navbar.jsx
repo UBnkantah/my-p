@@ -15,17 +15,17 @@ const Navbar = () => {
     <div className="navbar">
         <h1>Personal</h1>
         <ul ref={NavRef}>
-          <li><a href="/">HOME</a></li>
-          <li><a href="#about">ABOUT US</a></li>
-          <li><a href="#skills">SKILLS</a></li>
-          <li><a href="#projects">PROJECTS</a></li>
-          <li><a href="#contact">CONTACT US</a></li>
+          <li><a href="/" onClick={showNavbar}>HOME</a></li>
+          <li><a href="#about" onClick={showNavbar}>ABOUT US</a></li>
+          <li><a href="#skills" onClick={showNavbar}>SKILLS</a></li>
+          <li><a href="#projects" onClick={showNavbar}>PROJECTS</a></li>
+          <li><a href="#contact" onClick={showNavbar}>CONTACT US</a></li>
           <button className="nav-btn nav-close" onClick={showNavbar}>
-            <FaTimes />
+            <FaTimes size={20} />
           </button>
         </ul>
         <button className="nav-btn" onClick={showNavbar}>
-          <FaBars />
+          <FaBars size={20} />
         </button>
     </div>
   )
