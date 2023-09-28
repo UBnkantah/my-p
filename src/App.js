@@ -1,9 +1,11 @@
 import Main from "./Components/Main/Main";
+import {ToastContainer} from "react-toastify"
 
 function App() {
   return (
-    <div className="App">
+    <div>
         <Main />
+        <ToastContainer />
     </div>
   );
 }
